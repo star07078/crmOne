@@ -1,0 +1,104 @@
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 80rem;
+    background: #eee;
+    overflow-x: hidden;
+    .bg{
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 41rem;
+        overflow: hidden;
+    }
+    .body{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            flex: 0 0 17rem;
+            h1{
+                color: #fff;
+                font-size: 4.4rem;
+                line-height: 17rem;
+            }	
+        }
+        .section{
+            flex-grow: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                margin: 3rem 0;
+                font-size: 3rem;
+                font-weight: 500;
+                color: #fff;
+                letter-spacing: 1rem;
+            }
+            .form{
+                width: 47rem;
+                padding: 5.2rem 4.6rem;
+                background: rgba(255,255,255,0.5);
+                border-radius: 2rem;
+                span{
+                    display: block;
+                    width: 100%;
+                    border-radius: 0.6rem;
+                    overflow: hidden;
+                    &.mb{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 4.4rem;
+                        margin-bottom: 2rem;
+                        background: #fff;
+                        i{
+                            flex: 0 0 6.6rem;
+                            text-align: center;
+                            font-size: 2.4rem;
+                            color: #ccc;
+                        }
+                        input{
+                            flex: 1;
+                            border: none;
+                            font-size: 1.6rem;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                    }
+                    strong{
+                        color: red;
+                    }
+                    button{
+                        width: 100%;
+                        background: #46a5ff;
+                        height: 4.4rem;
+                        font-size: 2rem;
+                        border: none;
+                        color: #fff;
+                        margin-top: 4.8rem;
+                    }
+                }
+            }
+        }
+        .foot{
+            margin-bottom: 3rem;
+            text-align: center;
+            img{
+                margin: 2rem 0;
+            }
+        }
+    }
+}

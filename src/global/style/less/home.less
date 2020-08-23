@@ -1,0 +1,94 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    .content{
+        // content被多个页面公用，提取到了global.css
+        aside{
+            margin-bottom: 2rem;
+            // &.aside代表的是下面有两个模块
+            &.aside{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .modal-box{
+                    &:first-child{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            .module{
+                .entry{
+                    background: #fff;
+                    padding: 2rem;
+                    span{
+                        display: inline-block;
+                        text-align: center;
+                        width: 12rem;
+                        height: 12rem;
+                        margin: 0 0.6rem;
+                        cursor: pointer;
+                        i{
+                            width: 6rem;
+                            height: 6rem;
+                            display: inline-block;
+                            font-size: 5rem;
+                            line-height: 6rem;
+                            margin: 1rem 0;
+                        }
+                        p{
+                            color: #666;
+                        }
+                        &:hover{
+                            background: rgba(200,200,200,0.2);
+                        }
+                    }
+                    .newsNumber{
+                        position: relative;
+                        mark{
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 2.4rem;
+                            background: #ff5918;
+                            border-radius: 50%;
+                            font-size: 1.2rem;
+                            position: absolute;
+                            top: 0.2rem;
+                            right: 2rem;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .module1{
+                .ul{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    li{
+                        width: 25%;
+                        height: 19rem;
+                        text-align: center;
+                        p{
+                            color: #999;
+                            line-height: 9rem;
+                        }
+                        span{
+                            color: #222;
+                            font-size: 3rem;
+                        }
+                        &:hover{
+                            span{
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
